@@ -2,19 +2,36 @@
  * Blurs synopses on Netflix unless you hover over them.
  * © 2018 Tamme Schichler
  */
+ /* ==UserStyle==
+@name         Netflix: Blur Synopses
+@description  Blurs synopses on Netflix unless you hover over them.
+@namespace    github.com/openstyles/stylus
+@author       Tamme Schichler <tammeschichler+userstyles@googlemail.com> (tammeschichler.de)
+@version      1.0.0
+@homepageURL  https://gitlab.com/Tamschi/css-hacks
+@supportURL   https://gitlab.com/Tamschi/css-hacks/issues
+@updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-blur-synopses.user.css
+@license      CC-BY-NC-SA-4.0
+@preprocessor uso
+
+@var text blur-strength "Blur Strength" 1em
+@var text unblur-delay "Unblur Delay" 1s
+@var text unblur-duration "Unblur Duration" 1s
+@var text blur-duration "Blur Duration" 1s
+==/UserStyle== */
 
 @-moz-document url-prefix("https://www.netflix.com/") {
 /* On the homepage: */ .synopsis, .episodeSynopsis,
 /* On the pause idle screen: */ .evidence-overlay > p.nfa-w-60,
 /* After an episode finishes: */ .WatchNext-episode-synopsis, .PromotedVideo-synopsis {
-    filter: blur(1em);
-    transition: filter 1s;
+    filter: blur(/*[[blur-strength]]*/);
+    transition: filter /*[[blur-duration]]*/;
 }
 
 .synopsis:hover, .episodeSynopsis:hover,
 .evidence-overlay > p.nfa-w-60:hover,
 .WatchNext-episode-synopsis:hover, .PromotedVideo-synopsis:hover {
     filter: blur(0);
-    transition: filter 1s .5s;
+    transition: filter /*[[unblur-duration]]*/ /*[[unblur-delay]]*/;
 }
 }
