@@ -1,0 +1,20 @@
+/*
+ * Blurs synopses on Netflix unless you hover over them.
+ * © 2018 Tamme Schichler
+ */
+
+@-moz-document url-prefix("https://www.netflix.com/") {
+/* On the homepage: */ .synopsis, .episodeSynopsis,
+/* On the pause idle screen: */ .evidence-overlay > p.nfa-w-60,
+/* After an episode finishes: */ .WatchNext-episode-synopsis, .PromotedVideo-synopsis {
+    filter: blur(1em);
+    transition: filter 1s;
+}
+
+.synopsis:hover, .episodeSynopsis:hover,
+.evidence-overlay > p.nfa-w-60:hover,
+.WatchNext-episode-synopsis:hover, .PromotedVideo-synopsis:hover {
+    filter: blur(0);
+    transition: filter 1s .5s;
+}
+}

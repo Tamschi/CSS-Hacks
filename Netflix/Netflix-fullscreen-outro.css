@@ -1,0 +1,19 @@
+/*
+ * Lets you view the credits in full screen automatically, only showing the end card once the video is **really** over.
+ * © 2018 Tamme Schichler
+ */
+
+@-moz-document domain("www.netflix.com") {
+.AkiraPlayer .nf-player-container.NFPlayer.postplay:not(.ended) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: none;
+}
+
+.AkiraPlayer .nf-player-container.NFPlayer.postplay:not(.ended):hover {
+    border: none;
+}
+}
