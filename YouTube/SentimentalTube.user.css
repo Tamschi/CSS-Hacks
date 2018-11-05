@@ -1,0 +1,19 @@
+/* © 2017 Tamme Schichler
+==UserStyle==
+@name         SentimentalTube
+@description  Widens the sentiment bar in YouTube's new theme (2017) to span all the way across its container.
+@namespace    github.com/openstyles/stylus
+@author       Tamme Schichler <tammeschichler+userstyles@googlemail.com> (tammeschichler.de)
+@version      1.0.0
+@homepageURL  https://gitlab.com/Tamschi/css-hacks
+@supportURL   https://gitlab.com/Tamschi/css-hacks/issues
+@updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/YouTube/SentimentalTube.user.css
+@license      CC-BY-NC-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+@namespace url(http://www.w3.org/1999/xhtml);
+#sentiment.ytd-video-primary-info-renderer {
+    width: 100% !important;
+}
+}
