@@ -12,7 +12,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
-@namespace url(http://www.w3.org/1999/xhtml);
 #sentiment.ytd-video-primary-info-renderer {
     width: 100% !important;
 }
