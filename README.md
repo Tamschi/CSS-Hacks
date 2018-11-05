@@ -3,8 +3,8 @@
 A bunch of (mostly small) quality of life improvements for different websites.
 
 ## Netflix
-- [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-blur-synopses.user.css) unless you hover over them.
-- [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-fullscreen-outro.user.css) until the episode is really over.
+- [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Blur-Synopses.user.css) unless you hover over them.
+- [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css) until the episode is really over.
 
 ## Twitter
 - [Soft Twitter](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Soft-Twitter.user.css) to bring back those nice pillow shapes.
