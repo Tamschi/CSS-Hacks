@@ -13,7 +13,6 @@
 
 @var color undyed-dye "Undyed colour" #fff
 @var color undyed-hover-dye "Undyed hover colour" #eee
-@var range undyed-min-ratio "Undyed minimum ratio" [0, 0, 1, 0.01]
 @var color blocked-dye "Blocked colour" #daa
 @var color blocked-hover-dye "Blocked hover colour" #b88
 @var range blocked-dye-ratio "Blocked colour ratio" [1, 0, 1, 0.01]
@@ -34,6 +33,7 @@
 @var range social-context-dye-ratio "Social Context colour ratio" [1, 0, 1, 0.01]
 @var text dye-gradient-direction "Dye Gradient Direction" to bottom right
 ==/UserStyle== */
+/* Not available due to missing piecewise functions: @var range undyed-min-ratio "Undyed minimum ratio" [0, 0, 1, 0.01] */
 
 @-moz-document domain("twitter.com") {
 div[data-you-block="true"] {
@@ -70,13 +70,15 @@ div.tweet {
 		var(--dye-follower, 0) +
 		var(--dye-social-context, 0)
 	);
-	--dye-ratio-scaling: calc(1 / min(calc(1 - var(--undyed-min-ratio)), var(--dye-ratio-sum)));
-	--after-undyed-ratio: calc(100% * min(var(--undyed-min-ratio), calc(1 - var(--dye-ratio-sum))));
-	--after-blocked-ratio: calc(100% * (var(--after-undyed-ratio) + var(--dye-blocked, 0) * var(--dye-ratio-scaling)));
-	--after-beloved-ratio: calc(100% * (var(--after-blocked-ratio) + var(--dye-beloved, 0) * var(--dye-ratio-scaling)));
-	--after-promoted-ratio: calc(100% * (var(--after-beloved-ratio) + var(--dye-promoted, 0) * var(--dye-ratio-scaling)));
-	--after-retweet-ratio: calc(100% * (var(--after-promoted-ratio) + var(--dye-retweet, 0) * var(--dye-ratio-scaling)));
-	--after-follower-ratio: calc(100% * (var(--after-retweet-ratio) + var(--dye-follower, 0) * var(--dye-ratio-scaling)));
+	/* Hack due to missing piecewise functions. */
+	--dye-ratio-scaling: calc(1 / var(--dye-ratio-sum));
+	--after-undyed-ratio: calc(100% * (1 - var(--dye-ratio-sum)));
+	/* End hack. */
+	--after-blocked-ratio: calc(var(--after-undyed-ratio) + 100% * var(--dye-blocked, 0) * var(--dye-ratio-scaling));
+	--after-beloved-ratio: calc(var(--after-blocked-ratio) + 100% * var(--dye-beloved, 0) * var(--dye-ratio-scaling));
+	--after-promoted-ratio: calc(var(--after-beloved-ratio) + 100% * var(--dye-promoted, 0) * var(--dye-ratio-scaling));
+	--after-retweet-ratio: calc(var(--after-promoted-ratio) + 100% * var(--dye-retweet, 0) * var(--dye-ratio-scaling));
+	--after-follower-ratio: calc(var(--after-retweet-ratio) + 100% * var(--dye-follower, 0) * var(--dye-ratio-scaling));
 }
 
 div.tweet {
