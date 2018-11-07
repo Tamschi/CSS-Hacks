@@ -11,26 +11,26 @@
 @license      CC-BY-NC-SA-4.0
 @preprocessor default
 
-@var color undyed-dye "Undyed colour" #fff;
-@var color undyed-hover-dye "Undyed hover colour" #eee;
+@var color undyed-dye "Undyed colour" #fff
+@var color undyed-hover-dye "Undyed hover colour" #eee
 @var range undyed-min-ratio "Undyed minimum ratio" [0, 0, 1, 0.01]
-@var color blocked-dye "Blocked colour" #daa;
-@var color blocked-hover-dye "Blocked hover colour" #b88;
+@var color blocked-dye "Blocked colour" #daa
+@var color blocked-hover-dye "Blocked hover colour" #b88
 @var range blocked-dye-ratio "Blocked colour ratio" [1, 0, 1, 0.01]
-@var color beloved-dye "Beloved colour" #fde;
-@var color beloved-hover-dye "Beloved hover colour" #ddcccd5;
+@var color beloved-dye "Beloved colour" #fde
+@var color beloved-hover-dye "Beloved hover colour" #ddcccd5
 @var range beloved-dye-ratio "Beloved colour ratio" [1, 0, 1, 0.01]
-@var color promoted-dye "Promoted colour" #ffc;
-@var color promoted-hover-dye "Promoted hover colour" #eeb;
+@var color promoted-dye "Promoted colour" #ffc
+@var color promoted-hover-dye "Promoted hover colour" #eeb
 @var range promoted-dye-ratio "Promoted colour ratio" [1, 0, 1, 0.01]
-@var color retweet-dye "Retweet colour" #dfd;
-@var color retweet-hover-dye "Retweet hover colour" #cdc;
+@var color retweet-dye "Retweet colour" #dfd
+@var color retweet-hover-dye "Retweet hover colour" #cdc
 @var range retweet-dye-ratio "Retweet colour ratio" [1, 0, 1, 0.01]
-@var color follower-dye "Follower colour" #ddf;
-@var color follower-hover-dye "Follower hover colour" #ccd;
+@var color follower-dye "Follower colour" #ddf
+@var color follower-hover-dye "Follower hover colour" #ccd
 @var range follower-dye-ratio "Follower colour ratio" [1, 0, 1, 0.01]
-@var color social-context-dye "Social Context colour" #d8bff2;
-@var color social-context-hover-dye "Social Context hover colour" #c7aee1;
+@var color social-context-dye "Social Context colour" #d8bff2
+@var color social-context-hover-dye "Social Context hover colour" #c7aee1
 @var range social-context-dye-ratio "Social Context colour ratio" [1, 0, 1, 0.01]
 @var text dye-gradient-direction "Dye Gradient Direction" to bottom right
 ==/UserStyle== */
