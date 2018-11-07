@@ -1,0 +1,116 @@
+/* © 2018 Tamme Schichler
+==UserStyle==
+@name         Twitter: Meta Colours
+@description  Colours tweets (and a few other site elements) by various meta data information.
+@namespace    github.com/openstyles/stylus
+@author       Tamme Schichler <tammeschichler+userstyles@googlemail.com> (tammeschichler.de)
+@version      1.0.0
+@homepageURL  https://gitlab.com/Tamschi/css-hacks
+@supportURL   https://gitlab.com/Tamschi/css-hacks/issues
+@updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Meta-Colours.user.css
+@license      CC-BY-NC-SA-4.0
+@preprocessor default
+
+@var color undyed-dye "Undyed colour" #fff;
+@var color undyed-hover-dye "Undyed hover colour" #eee;
+@var range undyed-min-ratio "Undyed minimum ratio" [0, 0, 1, 0.01]
+@var color blocked-dye "Blocked colour" #daa;
+@var color blocked-hover-dye "Blocked hover colour" #b88;
+@var range blocked-dye-ratio "Blocked colour ratio" [1, 0, 1, 0.01]
+@var color beloved-dye "Beloved colour" #fde;
+@var color beloved-hover-dye "Beloved hover colour" #ddcccd5;
+@var range beloved-dye-ratio "Beloved colour ratio" [1, 0, 1, 0.01]
+@var color promoted-dye "Promoted colour" #ffc;
+@var color promoted-hover-dye "Promoted hover colour" #eeb;
+@var range promoted-dye-ratio "Promoted colour ratio" [1, 0, 1, 0.01]
+@var color retweet-dye "Retweet colour" #dfd;
+@var color retweet-hover-dye "Retweet hover colour" #cdc;
+@var range retweet-dye-ratio "Retweet colour ratio" [1, 0, 1, 0.01]
+@var color follower-dye "Follower colour" #ddf;
+@var color follower-hover-dye "Follower hover colour" #ccd;
+@var range follower-dye-ratio "Follower colour ratio" [1, 0, 1, 0.01]
+@var color social-context-dye "Social Context colour" #d8bff2;
+@var color social-context-hover-dye "Social Context hover colour" #c7aee1;
+@var range social-context-dye-ratio "Social Context colour ratio" [1, 0, 1, 0.01]
+@var text dye-gradient-direction "Dye Gradient Direction" to bottom right
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+div[data-you-block="true"] {
+	--dye-blocked: var(--blocked-dye-ratio);
+}
+
+div[data-component-context="suggest_activity_tweet"] {
+	--dye-beloved: var(--beloved-dye-ratio);
+}
+
+.promoted-tweet:not(.descendant) {
+	--dye-promoted: var(--promoted-dye-ratio);
+}
+
+div[data-retweet-id] {
+	--dye-retweet: var(--retweet-dye-ratio);
+}
+
+div[data-follows-you="true"] {
+	--dye-follower: var(--follower-dye-ratio);
+}
+
+/* ___ follow, untested */
+div[data-component-context="suggest-pyle-tweet"] {
+	--dye-social-context: var(--social-context-dye-ratio);
+}
+
+div.tweet {
+	--dye-ratio-sum: calc(
+		var(--dye-blocked, 0) +
+		var(--dye-beloved, 0) +
+		var(--dye-promoted, 0) +
+		var(--dye-retweet, 0) +
+		var(--dye-follower, 0) +
+		var(--dye-social-context, 0)
+	);
+	--dye-ratio-scaling: calc(1 / min(calc(1 - var(--undyed-min-ratio)), var(--dye-ratio-sum)));
+	--after-undyed-ratio: calc(100% * min(var(--undyed-min-ratio), calc(1 - var(--dye-ratio-sum))));
+	--after-blocked-ratio: calc(100% * (var(--after-undyed-ratio) + var(--dye-blocked, 0) * var(--dye-ratio-scaling)));
+	--after-beloved-ratio: calc(100% * (var(--after-blocked-ratio) + var(--dye-beloved, 0) * var(--dye-ratio-scaling)));
+	--after-promoted-ratio: calc(100% * (var(--after-beloved-ratio) + var(--dye-promoted, 0) * var(--dye-ratio-scaling)));
+	--after-retweet-ratio: calc(100% * (var(--after-promoted-ratio) + var(--dye-retweet, 0) * var(--dye-ratio-scaling)));
+	--after-follower-ratio: calc(100% * (var(--after-retweet-ratio) + var(--dye-follower, 0) * var(--dye-ratio-scaling)));
+}
+
+div.tweet {
+	background: linear-gradient(var(--dye-gradient-direction),
+		var(--undyed-dye), var(--undyed-dye) var(--after-undyed-ratio),
+		var(--blocked-dye) var(--after-undyed-ratio), var(--blocked-dye) var(--after-blocked-ratio),
+		var(--beloved-dye) var(--after-blocked-ratio), var(--beloved-dye) var(--after-beloved-ratio),
+		var(--promoted-dye) var(--after-beloved-ratio), var(--promoted-dye) var(--after-promoted-ratio),
+		var(--retweet-dye) var(--after-promoted-ratio), var(--retweet-dye) var(--after-retweet-ratio),
+		var(--follower-dye) var(--after-retweet-ratio), var(--follower-dye) var(--after-follower-ratio),
+		var(--social-context-dye) var(--after-follower-ratio), var(--social-context-dye)
+	);
+}
+
+div.tweet:hover {
+	background: linear-gradient(var(--dye-gradient-direction),
+		var(--undyed-hover-dye), var(--undyed-hover-dye) var(--after-undyed-ratio),
+		var(--blocked-hover-dye) var(--after-undyed-ratio), var(--blocked-hover-dye) var(--after-blocked-ratio),
+		var(--beloved-hover-dye) var(--after-blocked-ratio), var(--beloved-hover-dye) var(--after-beloved-ratio),
+		var(--promoted-hover-dye) var(--after-beloved-ratio), var(--promoted-hover-dye) var(--after-promoted-ratio),
+		var(--retweet-hover-dye) var(--after-promoted-ratio), var(--retweet-hover-dye) var(--after-retweet-ratio),
+		var(--follower-hover-dye) var(--after-retweet-ratio), var(--follower-hover-dye) var(--after-follower-ratio),
+		var(--social-context-hover-dye) var(--after-follower-ratio), var(--social-context-hover-dye)
+	);
+}
+
+/* other */
+
+.promoted-account,
+.promoted-trend {
+	background-color: var(--promoted-dye);
+}
+
+[data-trend-token*=":social_context_"] > .pretty-link {
+	background-color: var(--social-context-dye);
+}
+}
