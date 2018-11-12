@@ -13,6 +13,7 @@
 
 @var text social-2 "2 in social context" 1.5em
 @var text social-3 "3 in social context" 2em
+@var text social-4-10 "4 to 10 in social context" 2.5em
 @var text count-1k-10k "1k to 10k" 1.5em
 @var text count-10k-100k "10k to 100k" 2em
 @var text count-100k-1M "100k to 1M" 2.5em
@@ -26,6 +27,10 @@
 
 .trend-item[data-trend-token*="social_context_3_metadescription"] {
     font-size: /*[[social-3]]*/;
+}
+
+.trend-item[data-trend-token*="social_context_4_10_metadescription"] {
+    font-size: /*[[social-4-10]]*/;
 }
 
 /* I don't know how exactly social context is staggered. If you see it, please help out with that. */
