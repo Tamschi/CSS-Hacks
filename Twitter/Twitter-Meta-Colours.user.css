@@ -1,5 +1,4 @@
-/* © 2018 Tamme Schichler
-==UserStyle==
+/* ==UserStyle==
 @name         Twitter: Meta Colours
 @description  Colours tweets (and a few other site elements) by various meta data information.
 @namespace    github.com/openstyles/stylus
@@ -34,6 +33,7 @@
 @var text dye-gradient-direction "Dye Gradient Direction" to bottom right
 ==/UserStyle== */
 /* Not available due to missing piecewise functions: @var range undyed-min-ratio "Undyed minimum ratio" [0, 0, 1, 0.01] */
+/* © 2018 Tamme Schichler */
 
 @-moz-document domain("twitter.com") {
 div[data-you-block="true"] {

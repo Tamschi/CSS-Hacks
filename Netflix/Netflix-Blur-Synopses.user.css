@@ -1,5 +1,4 @@
-/* © 2018 Tamme Schichler
-==UserStyle==
+/* ==UserStyle==
 @name         Netflix: Blur Synopses
 @description  Blurs synopses on Netflix unless you hover over them.
 @namespace    github.com/openstyles/stylus
@@ -16,6 +15,7 @@
 @var text unblur-duration "Unblur Duration" 1s
 @var text blur-duration "Blur Duration" 1s
 ==/UserStyle== */
+/* © 2018 Tamme Schichler */
 
 @-moz-document url-prefix("https://www.netflix.com/") {
 /* On the homepage: */ .synopsis, .episodeSynopsis,

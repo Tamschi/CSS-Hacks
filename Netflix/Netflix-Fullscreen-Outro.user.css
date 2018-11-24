@@ -1,5 +1,4 @@
-/* © 2018 Tamme Schichler
-==UserStyle==
+/* ==UserStyle==
 @name         Netflix: Fullscreen Outro
 @description  Lets you view the credits in full screen automatically, only showing the end card once the video is **really** over.
 @namespace    github.com/openstyles/stylus
@@ -10,6 +9,7 @@
 @updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css
 @license      CC-BY-NC-SA-4.0
 ==/UserStyle== */
+/* © 2018 Tamme Schichler */
 
 @-moz-document domain("www.netflix.com") {
 .AkiraPlayer .nf-player-container.NFPlayer.postplay:not(.ended) {
