@@ -1,5 +1,4 @@
-/* © 2017-2018 Tamme Schichler
-==UserStyle==
+/* ==UserStyle==
 @name         Twitter: Trend Size
 @description  Resizes trending topic headlines by just how trendy they are.
 @namespace    github.com/openstyles/stylus
@@ -19,6 +18,7 @@
 @var text count-100k-1M "100k to 1M" 2.5em
 @var text count-1M-10M "1M to 10M" 3em
 ==/UserStyle== */
+/* © 2017-2018 Tamme Schichler */
 
 @-moz-document domain("twitter.com") {
 .trend-item[data-trend-token*="social_context_2_metadescription"] {

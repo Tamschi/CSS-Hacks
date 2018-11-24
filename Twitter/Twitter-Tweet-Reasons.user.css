@@ -1,5 +1,4 @@
-/* © 2017-2018 Tamme Schichler
-==UserStyle==
+/* ==UserStyle==
 @name         Twitter: Tweet Reasons
 @description  Displays icons next to each Tweet according to why they've been suggested for consumption. If there's no icon, then it's not a suggestion.
 @namespace    github.com/openstyles/stylus
@@ -23,6 +22,7 @@
 @var text ScTweet "ScTweet" 👥
 @var text No-Reason "No Reason" 🤷
 ==/UserStyle== */
+/* © 2017-2018 Tamme Schichler */
 
 @-moz-document domain("twitter.com") {
 li[data-suggestion-json*="\"suggestion_details\""]::after {
