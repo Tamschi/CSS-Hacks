@@ -1,0 +1,76 @@
+/* © 2017-2018 Tamme Schichler
+==UserStyle==
+@name         Twitter: Tweet Reasons
+@description  Displays icons next to each Tweet according to why they've been suggested for consumption. If there's no icon, then it's not a suggestion.
+@namespace    github.com/openstyles/stylus
+@author       Tamme Schichler <tammeschichler+userstyles@googlemail.com> (tammeschichler.de)
+@version      1.0.0
+@homepageURL  https://gitlab.com/Tamschi/css-hacks
+@supportURL   https://gitlab.com/Tamschi/css-hacks/issues
+@updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Tweet-Reasons.user.css
+@license      CC-BY-NC-SA-4.0
+@preprocessor uso
+
+@var text Other "Other/Unknown" ?
+@var text BeforeRecapTweet "BeforeRecapTweet" 👟
+@var text RankedTimelineTweet "RankedTimelineTweet" 📈
+@var text WhoToFollow "WhoToFollow" 👣
+@var text RecycledTweet "RecycledTweet" ♻️
+@var text PyleTweet "PyleTweet" 💩
+@var text RecycledTweetInline "RecycledTweetInline" (♻️)
+@var text ActivityTweet "ActivityTweet" 🔥
+@var text RankedOrganicTweet "RankedOrganicTweet" 🌱
+@var text ScTweet "ScTweet" 👥
+@var text No-Reason "No Reason" 🤷
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+li[data-suggestion-json*="\"suggestion_details\""]::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "/*[[Other]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"BeforeRecapTweet\""]::after {
+    content: "/*[[BeforeRecapTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"RankedTimelineTweet\""]::after {
+    content: "/*[[RankedTimelineTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"WhoToFollow\""]::after {
+    content: "/*[[WhoToFollow]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"RecycledTweet\""]::after {
+    content: "/*[[RecycledTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"PyleTweet\""]::after {
+    content: "/*[[PyleTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"RecycledTweetInline\""]::after {
+    content: "/*[[RecycledTweetInline]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"ActivityTweet\""]::after {
+    content: "/*[[ActivityTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"RankedOrganicTweet\""]::after {
+    content: "/*[[RankedOrganicTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_type\":\"ScTweet\""]::after {
+    content: "/*[[ScTweet]]*/";
+}
+
+li.js-stream-item[data-suggestion-json*="\"suggestion_details\":{}"]::after {
+    content: "/*[[No-Reason]]*/";
+}
+}
