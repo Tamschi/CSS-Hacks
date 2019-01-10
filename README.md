@@ -2,6 +2,10 @@
 
 A bunch of (mostly small) quality of life improvements for different websites.
 
+Prerequisites:
+- Firefox: https://addons.mozilla.org/firefox/addon/styl-us/
+- Chrome: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/
+
 ## Google Images
 - [Pinterest Marker](https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css)
 
