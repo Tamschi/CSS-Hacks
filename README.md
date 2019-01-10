@@ -2,6 +2,9 @@
 
 A bunch of (mostly small) quality of life improvements for different websites.
 
+## Google Images
+- [Pinterest Marker](https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css)
+
 ## Netflix
 - [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Blur-Synopses.user.css) unless you hover over them.
 - [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css) until the episode is really over.
