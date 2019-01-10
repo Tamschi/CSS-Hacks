@@ -2,12 +2,16 @@
 
 A bunch of (mostly small) quality of life improvements for different websites.
 
-Prerequisites:
+How to use:
+
+First install the Stylus extension:
 - Firefox: https://addons.mozilla.org/firefox/addon/styl-us/
 - Chrome: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/
 
+Afterwards, visit any of the links below and you should see an installation button.
+
 ## Google Images
-- [Pinterest Marker](https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css)
+- [Pinterest Marker](https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css) tells you at a glance which image results are from there.
 
 ## Netflix
 - [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Blur-Synopses.user.css) unless you hover over them.
