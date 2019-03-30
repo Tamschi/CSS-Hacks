@@ -26,4 +26,5 @@ Afterwards, visit any of the links below and you should see an installation butt
 - [Tweet Reasons](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Tweet-Reasons.user.css), to know why certain tweets appear when they do.
 
 ## YouTube
+- [End Card Opacity](https://gitlab.com/Tamschi/css-hacks/raw/master/YouTube/YouTube-End-Card-Opacity.user.css): Adds transparency to end cards on YouTube unless you hover over them, so you can still see the video behind.
 - [SentimentalTube](https://gitlab.com/Tamschi/css-hacks/raw/master/YouTube/SentimentalTube.user.css), so the like ratio layout isn't confusing.
