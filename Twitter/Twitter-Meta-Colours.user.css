@@ -16,7 +16,7 @@
 @var color blocked-hover-dye "Blocked hover colour" #b88
 @var range blocked-dye-ratio "Blocked colour ratio" [1, 0, 1, 0.01]
 @var color beloved-dye "Beloved colour" #fde
-@var color beloved-hover-dye "Beloved hover colour" #ddcccd5
+@var color beloved-hover-dye "Beloved hover colour" #ddccd5
 @var range beloved-dye-ratio "Beloved colour ratio" [1, 0, 1, 0.01]
 @var color promoted-dye "Promoted colour" #ffc
 @var color promoted-hover-dye "Promoted hover colour" #eeb
