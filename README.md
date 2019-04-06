@@ -19,6 +19,7 @@ Afterwards, visit any of the links below and you should see an installation butt
 
 ## Twitter
 - [Meta Colours](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Meta-Colours.user.css) shows meta information via background colours.
+- [Poll Spoiler](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Poll-Spoiler.user.css): Peek at current poll percentages by hovering over the options.
 - [Soft Twitter](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Soft-Twitter.user.css) to bring back those nice pillow shapes.
 - [Shutter Ads](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Shutter-Ads.user.css), if you want to make promoted tweets smaller without _quite_ blocking them.
 - [Tall Images Inline](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Tall-Images-Inline.user.css): No (image) cropping.
