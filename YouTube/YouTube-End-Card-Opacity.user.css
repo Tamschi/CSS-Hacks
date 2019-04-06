@@ -12,7 +12,7 @@
 
 @var range end-card-custom-opacity "End card opacity" [.25, 0, 1, 0.01]
 ==/UserStyle== */
-/* © 2018 Tamme Schichler */
+/* © 2019 Tamme Schichler */
 
 @-moz-document domain("www.youtube.com") {
 .ytp-ce-element.ytp-ce-element-show:not(:hover) {
