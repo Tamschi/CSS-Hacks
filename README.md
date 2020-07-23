@@ -18,6 +18,10 @@ Afterwards, visit any of the links below and you should see an installation butt
 - [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css) until the episode is really over.
 
 ## Twitter
+
+These all broke when Twitter reimplemented their web version with React.  
+The new web app has *completely atrocious* DOM structure and doesn't expose meta data, so I can't fix them.
+
 - [Meta Colours](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Meta-Colours.user.css) shows meta information via background colours.
 - [Poll Spoiler](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Poll-Spoiler.user.css): Peek at current poll percentages by hovering over the options.
 - [Soft Twitter](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Soft-Twitter.user.css) to bring back those nice pillow shapes.
