@@ -10,7 +10,7 @@ First install the Stylus extension:
 
 Afterwards, visit any of the links below and you should see an installation button.
 
-## Google Images
+## Google Images & DuckDuckGo Image Search
 - [Pinterest Marker](https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css) tells you at a glance which image results are from there.
 
 ## Netflix
