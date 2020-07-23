@@ -3,7 +3,7 @@
 @description  Clearly indicates when images are from Pinterest.
 @namespace    github.com/openstyles/stylus
 @author       Tamme Schichler <tammeschichler+userstyles@googlemail.com> (tammeschichler.de)
-@version      1.0.0
+@version      1.0.1
 @homepageURL  https://gitlab.com/Tamschi/css-hacks
 @supportURL   https://gitlab.com/Tamschi/css-hacks/issues
 @updateURL    https://gitlab.com/Tamschi/css-hacks/raw/master/Google-Images/Google-Images-Pinterest-Marker.user.css
@@ -12,19 +12,14 @@
 /* © 2019 Tamme Schichler */
 
 @-moz-document url-prefix("https://www.google.com/search") {
-a[href*="pinimg.com%2F"] > img {
-    opacity: .4;
-    filter: grayscale(50%);
-}
-
-a[href*="pinimg.com%2F"]::after {
+div > a[data-nav="1"] + a[href*="https://www.pinterest"]::after {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: calc(100% + 50px);
+    right: 50%;
+	transform: translatex(50%);
 
-    width: 25%;
-    height: 25%;
+    width: 50px;
+    height: 50px;
 
     content: "";
     background-repeat: no-repeat;
