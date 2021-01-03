@@ -17,7 +17,7 @@ Afterwards, visit any of the links below and you should see an installation butt
 - [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Blur-Synopses.user.css) unless you hover over them.
 - [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css) until the episode is really over.
 
-## Twitter
+## Twitter (**Old layout only!**)
 - [Meta Colours](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Meta-Colours.user.css) shows meta information via background colours.
 - [Poll Spoiler](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Twitter-Poll-Spoiler.user.css): Peek at current poll percentages by hovering over the options.
 - [Soft Twitter](https://gitlab.com/Tamschi/css-hacks/raw/master/Twitter/Soft-Twitter.user.css) to bring back those nice pillow shapes.
