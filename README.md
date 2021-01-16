@@ -17,7 +17,7 @@ Afterwards, visit any of the links below and you should see an installation butt
 - [Blur Synopses](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Blur-Synopses.user.css) unless you hover over them.
 - [Fullscreen Outro](https://gitlab.com/Tamschi/css-hacks/raw/master/Netflix/Netflix-Fullscreen-Outro.user.css) until the episode is really over.
 
-## Twitter
+## Twitter (**Old layout only!**)
 
 These all broke when Twitter reimplemented their web version with React.  
 The new web app has *completely atrocious* DOM structure and doesn't expose meta data, so I can't fix them.
